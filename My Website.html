@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Zuhayr's Website</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ZK</h1>
+    </header>
+    <nav>
+        <a href = "home.html">Home</a>
+        <a href = "parta.html">Parta</a>
+        <a href = "partb.html">Partb</a>
+        <a href = "cart.html">Cart</a>
+        <a href = "contact.html">Contact</a>
+    </nav>
+    <div class="drink">
+<h2>Drinks</h2>
+<img src="1.jpg" alt="fanta">
+
+</div>
+
+<!--form element-->
+    <section class="additional-info">
+        <h2>Stay updated with Zuhayr's Website</h2>
+        <p>Subscribe to our newsletter to receive the latest news directly to your inbox.</p>
+    
+    <form name = "myform" action="/action_page.php" onsubmit = "return validateForm()" method = "post">
+            <label for="fname"> First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <button type="submit" value="submit">submit</button>
+<br>
+    </section>
+
+    <script>
+        function validateForm() {
+            let x = document.forms["myform"]["fname"].value;
+            if (x == "khan"){
+                alert("User name accepted");
+                return false;
+            }
+        }
+
+    </script>
+</section>
